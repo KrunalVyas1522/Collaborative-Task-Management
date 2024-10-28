@@ -1,0 +1,184 @@
+{
+  "version": 6,
+  "entities": [
+    {
+      "entity": {
+        "type": "Project",
+        "id": "1377ee9b-9b3b-4da0-8bac-4644db3fbd6c",
+        "name": "task management"
+      },
+      "children": [
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n  \"name\":\"Admin Project-01.\",\n  \"description\": \"This is admin description of 1st project\",\n  \"members\": \"671f76cd44162e6095097a3a\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:5000",
+              "path": "/api/projects"
+            },
+            "id": "22816d6c-eca4-4d39-b572-86f42a76770e",
+            "name": "Create Project",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "enabled": true,
+                "name": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MWY3NmNkNDQxNjJlNjA5NTA5N2EzYSIsInJvbGUiOiJBZG1pbiIsImlhdCI6MTczMDExNjQ4NSwiZXhwIjoxNzMwMTIwMDg1fQ.SfxpC4MeCBTO0hRdBCAhOdQ_WPeqqOY3vk_Ka13YQuw"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n    \"projectId\": \"671f7debeacf46e65064dd77\",\n    \"title\": \"Task-04\",\n    \"description\": \"Sample Description for Task-04\",\n    \"dueDate\": \"2024-10-31T11:45:52.753Z\",\n    \"priority\": \"Medium\",\n    \"status\": \"In Progress\",\n    \"assignedTo\": \"671f76cd44162e6095097a3a\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:5000",
+              "path": "/api/tasks"
+            },
+            "id": "6b57ec2c-2779-4198-8b59-3c8c05ac7bd4",
+            "name": "Create Task",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "enabled": true,
+                "name": "authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MWY3NmNkNDQxNjJlNjA5NTA5N2EzYSIsInJvbGUiOiJBZG1pbiIsImlhdCI6MTczMDExNjQ4NSwiZXhwIjoxNzMwMTIwMDg1fQ.SfxpC4MeCBTO0hRdBCAhOdQ_WPeqqOY3vk_Ka13YQuw"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n    \"username\": \"user-01\",\n    \"email\": \"user@mail.com\",\n    \"password\": \"User@123\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:5000",
+              "path": "/api/auth/signup"
+            },
+            "id": "b22f4fa7-f2ba-455f-ad01-dde7382f46fa",
+            "name": "Create User",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n    \"email\": \"user@mail.com\",\n    \"password\": \"User@123\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:5000",
+              "path": "/api/auth/login"
+            },
+            "id": "3e30c73c-5cbd-43ed-85d8-5d0611f49d64",
+            "name": "Login",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
