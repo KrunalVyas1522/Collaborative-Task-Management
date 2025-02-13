@@ -1,4 +1,4 @@
-# precticle-Collaborative-Task-Management
+# Collaborative-Task-Management
 
 **Sample Env File**
 
